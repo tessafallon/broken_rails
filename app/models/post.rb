@@ -1,2 +1,2 @@
-class Blogs <AcitveRecord::Base
+class Kiwi <AcitveRecord::Base
 end
