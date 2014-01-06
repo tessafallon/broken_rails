@@ -1,7 +1,7 @@
-class KiwiController < ApplicationController
+class KiwisController < ApplicationController
 
 	def index
-		@kiwi = Kiwi.all
+		@kiwis = Kiwi.all
 	end
 
 	def show
@@ -15,7 +15,7 @@ class KiwiController < ApplicationController
 	def create
 		@kiwi = Kiwi.find(params[:kiwi])
 		if @kiwi.save
-			redirect_to @kiwi
+			redirect_to @kiwis
 		end
 			render new
 		end

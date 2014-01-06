@@ -1,0 +1,21 @@
+%h1 Listing posts
+
+%table
+  %tr
+    %th Title
+    %th Body
+    %th
+    %th
+    %th
+
+  - @kiwis.each do |kiwi|
+    %tr
+      %td= kiwi.title
+      %td= kiwi.body
+      %td= link_to 'Show', kiwi, {:class => "blake"}
+      %td= link_to 'Edit', edit_kiwi_path(kiwi)
+      %td= link_to 'Destroy', kiwi, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to('New Post', "/kiwis/new")
