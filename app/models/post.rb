@@ -1,2 +1,2 @@
-class Post <AcitveRecord::Base
+class Blogs <AcitveRecord::Base
 end
