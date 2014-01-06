@@ -16,7 +16,7 @@ class KiwisController < ApplicationController
 		@kiwi = Kiwi.find(params[:kiwi])
 		if @kiwi.save
 			redirect_to @kiwis
-		end
+		else
 			render new
 		end
 	end
