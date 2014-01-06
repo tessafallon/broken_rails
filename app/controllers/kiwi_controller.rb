@@ -2,7 +2,6 @@ class KiwiController < ApplicationController
 
 	def index
 		@kiwi = Kiwi.all
-		# gives intance variable of all kiwi
 	end
 
 	def show
