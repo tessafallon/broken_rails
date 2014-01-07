@@ -1,2 +1,2 @@
-class Kiwi < ActiveRecord::Base
+class Kiwis < ActiveRecord::Base
 end

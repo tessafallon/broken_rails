@@ -9,11 +9,11 @@ class KiwisController < ApplicationController
 	end
 
 	def new
-		@kiwi = Kiwi.new
+		@kiwis = Kiwi.new
 	end
 
 	def create
-		@kiwi = Kiwi.new(params[:kiwi])
+		@kiwi = Kiwi.find(params[:kiwi])
 		if @kiwi.save
 			redirect_to @kiwi
 		else
