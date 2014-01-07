@@ -13,7 +13,6 @@ class KiwisController < ApplicationController
 	end
 
 	def create
-		debugger
 		@kiwi = Kiwi.new(params[:kiwi])
 		if @kiwi.save
 			redirect_to @kiwi
